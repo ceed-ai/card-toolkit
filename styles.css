@@ -13,6 +13,7 @@
 .navbar {
     background-color: transparent !important;
 }
+
 .navbar-brand:hover {
   color: var(--primary-color) !important;
 }
