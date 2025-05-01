@@ -13,6 +13,9 @@
 .navbar {
     background-color: transparent !important;
 }
+.navbar-brand:hover {
+  color: var(--primary-color) !important;
+}
 
 .navbar-brand {
     font-weight: 700;
@@ -213,6 +216,10 @@ th{
 .carousel-control-next {
     right: -10%;
 }
+.navbar-logo {
+  height: 5.25rem;
+  width: auto;
+}
 
 /* Ensure controls remain visible on smaller screens */
 @media (max-width: 992px) {
@@ -269,5 +276,12 @@ th{
     .nav-link {
         padding: 0.5rem 1rem !important;
         color: var(--primary-color) !important;
+    }
+}
+
+/* Adjust logo size on mobile */
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 3.25rem;
     }
 } 
