@@ -14,6 +14,22 @@
     background: var(--secondary-color);
 }
 
+/* Ensure educator resources page background extends to footer */
+body {
+    background-color: var(--secondary-color);
+}
+
+/* Position footer clouds at bottom */
+.footer-clouds-left,
+.footer-clouds-right {
+    align-self: flex-end;
+}
+
+.footer-content {
+    align-items: flex-end;
+    min-height: 200px;
+}
+
 .navbar {
     background-color: var(--secondary-color) !important;
     position: sticky !important;
@@ -690,10 +706,10 @@ th{
         text-align: center;
         padding: 0;
     }
-    
     .footer-text p {
-        font-size: 0.5rem;
+        padding: 0.8rem;
     }
+    
     
     .footer-clouds {
         max-width: 150px;
