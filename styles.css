@@ -78,7 +78,8 @@ body {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: 100%;
+    object-fit: fill;
     object-position: center;
 }
 
@@ -740,3 +741,21 @@ th{
         max-width: 150px;
     }
 } 
+/* Responsive hero images */
+.hero-image-desktop {
+    display: block;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .hero-image-desktop {
+        display: none;
+    }
+    
+    .hero-image-mobile {
+        display: block;
+    }
+}
