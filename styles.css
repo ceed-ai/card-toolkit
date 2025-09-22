@@ -750,12 +750,22 @@ th{
     display: none;
 }
 
+/* Mobile hero image adjustments for better fit */
 @media (max-width: 767px) {
-    .hero-image-desktop {
-        display: none;
+    .hero-image-mobile {
+        object-fit: contain;
+        object-position: center;
+        height: 100%;
+        width: auto;
+        max-width: none;
     }
     
-    .hero-image-mobile {
-        display: block;
+    .hero-image-placeholder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image-desktop {
+        display: none;
     }
 }
